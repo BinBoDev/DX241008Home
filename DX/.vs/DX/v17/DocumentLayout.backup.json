@@ -1,0 +1,148 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Wpf_Basic\\WpfDX\\DXSP\\DX\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|d:\\wpf_basic\\wpfdx\\dxsp\\dx\\dx\\viewmodel\\accountvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|solutionrelative:dx\\viewmodel\\accountvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|d:\\wpf_basic\\wpfdx\\dxsp\\dx\\dx\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|solutionrelative:dx\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|d:\\wpf_basic\\wpfdx\\dxsp\\dx\\dx\\models\\dxsp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|solutionrelative:dx\\models\\dxsp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|d:\\wpf_basic\\wpfdx\\dxsp\\dx\\dx\\view\\admin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|solutionrelative:dx\\view\\admin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|d:\\wpf_basic\\wpfdx\\dxsp\\dx\\dx\\view\\admin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|solutionrelative:dx\\view\\admin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|d:\\wpf_basic\\wpfdx\\dxsp\\dx\\dx\\viewmodel\\dataviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|solutionrelative:dx\\viewmodel\\dataviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|d:\\wpf_basic\\wpfdx\\dxsp\\dx\\dx\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|solutionrelative:dx\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|d:\\wpf_basic\\wpfdx\\dxsp\\dx\\dx\\commands\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|solutionrelative:dx\\commands\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Admin.xaml.cs",
+              "DocumentMoniker": "D:\\Wpf_Basic\\WpfDX\\DXSP\\DX\\DX\\View\\Admin.xaml.cs",
+              "RelativeDocumentMoniker": "DX\\View\\Admin.xaml.cs",
+              "ToolTip": "D:\\Wpf_Basic\\WpfDX\\DXSP\\DX\\DX\\View\\Admin.xaml.cs",
+              "RelativeToolTip": "DX\\View\\Admin.xaml.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T15:39:48.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Admin.xaml",
+              "DocumentMoniker": "D:\\Wpf_Basic\\WpfDX\\DXSP\\DX\\DX\\View\\Admin.xaml",
+              "RelativeDocumentMoniker": "DX\\View\\Admin.xaml",
+              "ToolTip": "D:\\Wpf_Basic\\WpfDX\\DXSP\\DX\\DX\\View\\Admin.xaml",
+              "RelativeToolTip": "DX\\View\\Admin.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-08T15:38:21.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DataViewModel.cs",
+              "DocumentMoniker": "D:\\Wpf_Basic\\WpfDX\\DXSP\\DX\\DX\\ViewModel\\DataViewModel.cs",
+              "RelativeDocumentMoniker": "DX\\ViewModel\\DataViewModel.cs",
+              "ToolTip": "D:\\Wpf_Basic\\WpfDX\\DXSP\\DX\\DX\\ViewModel\\DataViewModel.cs",
+              "RelativeToolTip": "DX\\ViewModel\\DataViewModel.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T15:07:46.497Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DXSP.cs",
+              "DocumentMoniker": "D:\\Wpf_Basic\\WpfDX\\DXSP\\DX\\DX\\Models\\DXSP.cs",
+              "RelativeDocumentMoniker": "DX\\Models\\DXSP.cs",
+              "ToolTip": "D:\\Wpf_Basic\\WpfDX\\DXSP\\DX\\DX\\Models\\DXSP.cs",
+              "RelativeToolTip": "DX\\Models\\DXSP.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAxwCsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T14:40:32.298Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RelayCommand.cs",
+              "DocumentMoniker": "D:\\Wpf_Basic\\WpfDX\\DXSP\\DX\\DX\\Commands\\RelayCommand.cs",
+              "RelativeDocumentMoniker": "DX\\Commands\\RelayCommand.cs",
+              "ToolTip": "D:\\Wpf_Basic\\WpfDX\\DXSP\\DX\\DX\\Commands\\RelayCommand.cs",
+              "RelativeToolTip": "DX\\Commands\\RelayCommand.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T14:13:22.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Account.cs",
+              "DocumentMoniker": "D:\\Wpf_Basic\\WpfDX\\DXSP\\DX\\DX\\Models\\Account.cs",
+              "RelativeDocumentMoniker": "DX\\Models\\Account.cs",
+              "ToolTip": "D:\\Wpf_Basic\\WpfDX\\DXSP\\DX\\DX\\Models\\Account.cs",
+              "RelativeToolTip": "DX\\Models\\Account.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T04:44:58.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountVM.cs",
+              "DocumentMoniker": "D:\\Wpf_Basic\\WpfDX\\DXSP\\DX\\DX\\ViewModel\\AccountVM.cs",
+              "RelativeDocumentMoniker": "DX\\ViewModel\\AccountVM.cs",
+              "ToolTip": "D:\\Wpf_Basic\\WpfDX\\DXSP\\DX\\DX\\ViewModel\\AccountVM.cs",
+              "RelativeToolTip": "DX\\ViewModel\\AccountVM.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAowEkAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T02:27:58.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Wpf_Basic\\WpfDX\\DXSP\\DX\\DX\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "DX\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\Wpf_Basic\\WpfDX\\DXSP\\DX\\DX\\MainWindow.xaml.cs",
+              "RelativeToolTip": "DX\\MainWindow.xaml.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACwAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T02:34:34.134Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

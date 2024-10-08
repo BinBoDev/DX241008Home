@@ -1,0 +1,101 @@
+﻿<Window x:Class="DX.View.Admin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:DX.View"
+        mc:Ignorable="d"
+        Title="Admin" Height="450" Width="800"
+        Icon="/DX;component/View/Image/Uni.ico"
+        Loaded="Window_Loaded"
+        >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <materialDesign:Card Margin="5" BorderThickness="0">
+            <StackPanel Orientation="Horizontal">
+                <Menu HorizontalAlignment="Center" >
+                    <MenuItem Header="File" Height="20" Margin="2"  >
+                        
+                    </MenuItem>
+                    <MenuItem Header="Edit" Height="20" Margin="2" >
+                        
+                    </MenuItem>
+                </Menu>
+            </StackPanel>
+        </materialDesign:Card>
+        <materialDesign:Card Grid.Row="1" Margin="5">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <TextBox
+                              Name="txtUsername"  
+                              Margin="5"
+                              VerticalAlignment="Center"
+                              materialDesign:HintAssist.Hint="Tên đang nhập"
+                              Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                        <PasswordBox
+                              Margin="20,5,10,5"
+                              Name="txtPassword"
+                              materialDesign:HintAssist.Foreground="Green"
+                              materialDesign:HintAssist.Hint="Password"
+                              materialDesign:TextFieldAssist.UnderlineBrush="Green"
+                              Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" />
+                        <RadioButton Content="Admin" Margin="20,5,10,5" Name="rbAdmin"/>
+                        <RadioButton Content="Sub" Margin="5" Name="rbSub"/>
+                        <RadioButton Content="Nomal" Name="rbNomal"/>
+                        <Button Content="Thêm" Margin="20,5,10,5" Name="btnAdd" Background="Green"/>
+                        <Button Content="Update" Margin="20,5,10,5" Name="btnUpdate" Background="Orange"/>
+                    </StackPanel>
+            
+                    <DataGrid Grid.Row="1" CanUserAddRows="False" AutoGenerateColumns="False" ItemsSource="{Binding Accounts}">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Id" Binding="{Binding Id}"/>
+                            <DataGridTextColumn Header="Username" Binding="{Binding Username}"/>
+                            <DataGridTextColumn Header="Password" Binding="{Binding Password}"/>
+                            <DataGridTextColumn Header="Type" Binding="{Binding Type}"/>
+                            <DataGridTemplateColumn Header="Delete">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Button Name="btnDel" Background="Red">
+                                            <StackPanel Orientation="Horizontal">
+                                                <materialDesign:PackIcon Kind="DeleteOutline"  />
+                                                <TextBlock Text="Xóa"/>
+                                            </StackPanel>
+                                        </Button>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTemplateColumn Header="Edit">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Button Name="btnSlectEdit" Background="Aqua">
+                                            <StackPanel Orientation="Horizontal">
+                                                <materialDesign:PackIcon Kind="PencilOutline" />
+                                                <TextBlock Text="Sửa"/>
+                                            </StackPanel>
+                                        </Button>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+                <Grid Grid.Row="1">
+                    
+                </Grid>
+            </Grid>
+        </materialDesign:Card>
+    </Grid>
+</Window>
