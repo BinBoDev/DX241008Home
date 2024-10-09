@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Wpf_Basic\\WpfDX\\DXSP\\DX\\DX\\DX.csproj": {}
+    "D:\\OneDrive\\OneDrive - Cong ty TNHH But chi Mitsubishi Viet nam\\Desktop\\Home\\DX\\DX\\DX.csproj": {}
   },
   "projects": {
-    "D:\\Wpf_Basic\\WpfDX\\DXSP\\DX\\DX\\DX.csproj": {
+    "D:\\OneDrive\\OneDrive - Cong ty TNHH But chi Mitsubishi Viet nam\\Desktop\\Home\\DX\\DX\\DX.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Wpf_Basic\\WpfDX\\DXSP\\DX\\DX\\DX.csproj",
+        "projectUniqueName": "D:\\OneDrive\\OneDrive - Cong ty TNHH But chi Mitsubishi Viet nam\\Desktop\\Home\\DX\\DX\\DX.csproj",
         "projectName": "DX",
-        "projectPath": "D:\\Wpf_Basic\\WpfDX\\DXSP\\DX\\DX\\DX.csproj",
+        "projectPath": "D:\\OneDrive\\OneDrive - Cong ty TNHH But chi Mitsubishi Viet nam\\Desktop\\Home\\DX\\DX\\DX.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "D:\\Wpf_Basic\\WpfDX\\DXSP\\DX\\DX\\obj\\",
+        "outputPath": "D:\\OneDrive\\OneDrive - Cong ty TNHH But chi Mitsubishi Viet nam\\Desktop\\Home\\DX\\DX\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",

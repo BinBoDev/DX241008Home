@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/5sDFz2vx3E=",
+  "dgSpecHash": "RwTpJ5aVKLM=",
   "success": true,
-  "projectFilePath": "D:\\Wpf_Basic\\WpfDX\\DXSP\\DX\\DX\\DX.csproj",
+  "projectFilePath": "D:\\OneDrive\\OneDrive - Cong ty TNHH But chi Mitsubishi Viet nam\\Desktop\\Home\\DX\\DX\\DX.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ADMIN\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

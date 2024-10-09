@@ -7,6 +7,8 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Data;
 using System.Windows.Input;
 
 namespace DX.ViewModel
@@ -57,11 +59,10 @@ namespace DX.ViewModel
                 OnPropertyChanged(nameof(Username));
                 OnPropertyChanged(nameof(Password));
                 OnPropertyChanged(nameof(Type));
+                
 
             }
         }
-
-
 
 
         public ICommand AddCommand { get; set; }
@@ -80,7 +81,7 @@ namespace DX.ViewModel
 
         private bool CanEdit(object? obj)
         {
-            throw new NotImplementedException();
+            return SelectedAccount != null;
         }
 
         private void Edit(object? obj)
@@ -90,24 +91,39 @@ namespace DX.ViewModel
 
         private bool CanDelete(object? obj)
         {
-            throw new NotImplementedException();
+            return SelectedAccount != null;
         }
 
         private void Del(object? obj)
         {
-            throw new NotImplementedException();
+            
+            if (SelectedAccount != null)
+            {
+                if(MessageBox.Show($"Bạn có muốn xóa tài khoản \"{selectedAccount.Username}\" ","Xác nhận xóa",MessageBoxButton.YesNo)==MessageBoxResult.Yes)
+                {
+                    dbContext.accounts.Remove(SelectedAccount);
+                    dbContext.SaveChanges();
+                    SelectedAccount = null;
+                    Accounts = new ObservableCollection<Account>(dbContext.accounts.ToList());
+                    OnPropertyChanged(nameof(Accounts));
+                }    
+                
+
+
+            } 
+                
         }
 
         private void Add(object? obj)
         {
             throw new NotImplementedException();
         }
-
+        public event PropertyChangedEventHandler? PropertyChanged;
         private void OnPropertyChanged(string propertyName)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-        public event PropertyChangedEventHandler? PropertyChanged;
+        
     }
 }
