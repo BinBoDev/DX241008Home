@@ -21,6 +21,7 @@ namespace DX
     /// </summary>
     public partial class MainWindow : Window
     {
+        //Insert Accounts
         static void InsertAccount()
         {
             using var dbContext = new DXSP();
@@ -36,12 +37,14 @@ namespace DX
             dbContext.AddRange(account);
             dbContext.SaveChanges();
         }
+        //Create Database
         static void CreateDatabase()
         {
             using var dbcontex = new DXSP();
             string dbname = dbcontex.Database.GetDbConnection().Database;
             dbcontex.Database.EnsureCreated();
         }
+        //Drop Database
         static void DropDatabase()
         {
             using var dbcontex = new DXSP();

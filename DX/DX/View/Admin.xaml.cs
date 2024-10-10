@@ -30,5 +30,13 @@ namespace DX.View
         {
             this.WindowState = WindowState.Maximized;
         }
+
+        private void nextPage_XuatNL_Click(object sender, RoutedEventArgs e)
+        {
+            XuatNL xuatNL = new XuatNL();
+            this.Hide();
+            xuatNL.Show();
+            this.Show();
+        }
     }
 }

@@ -35,6 +35,8 @@ namespace DX.Models
         //                                        TrustServerCertificate=True;";
         //Khai báo một Table Account trong CSDL DXSP
         public DbSet<Account> accounts { get; set; }
+        //Khai báo một Table XuatNL
+        public DbSet<XuatNL> xuatNLs { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);

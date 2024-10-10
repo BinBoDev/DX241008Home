@@ -16,15 +16,18 @@
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
         <materialDesign:Card Margin="5" BorderThickness="0">
-            <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                 <Menu HorizontalAlignment="Center" >
-                    <MenuItem Header="File" Height="20" Margin="2"  >
+                    <MenuItem Header="File" Height="36" Margin="2"  >
                         
                     </MenuItem>
-                    <MenuItem Header="Edit" Height="20" Margin="2" >
+                    <MenuItem Header="Edit" Height="36" Margin="2" >
                         
                     </MenuItem>
                 </Menu>
+                <Button Margin="2" x:Name="nextPage_XuatNL" Content="Xuất liệu" Click="nextPage_XuatNL_Click">
+                    
+                </Button>
             </StackPanel>
         </materialDesign:Card>
         <materialDesign:Card Grid.Row="1" Margin="5">
@@ -40,15 +43,12 @@
                     </Grid.RowDefinitions>
                     <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                         <TextBox
-                              
-                              Text="{Binding SelectedAccount.Username,UpdateSourceTrigger=PropertyChanged}"
                               Name="txtUsername"  
                               Margin="5"
                               VerticalAlignment="Center"
                               materialDesign:HintAssist.Hint="Tên đăng nhập"
                               Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
                         <TextBox
-                              Text="{Binding SelectedAccount.Password,UpdateSourceTrigger=PropertyChanged}"
                               Name="txtPasword"   
                               Margin="5"
                               VerticalAlignment="Center"
@@ -56,24 +56,24 @@
                               Style="{StaticResource MaterialDesignFloatingHintTextBox}" /> 
                         <RadioButton 
                               Content="Admin" Margin="20,5,10,5" Name="rbAdmin" Tag="1"
-                              IsChecked="{Binding SelectedAccount.Type}"
+                              
                               />
                         <RadioButton Content="Sub" Margin="5" Name="rbSub" Tag="2"
-                                     IsChecked="{Binding SelectedAccount.Type}"
+                                     
                                      />
                         <RadioButton 
                                      Content="Nomal" Name="rbNomal" Tag="3"
-                                     IsChecked="{Binding SelectedAccount.Type}"
+                                   
                                      />
-                        <Button Content="Thêm" Margin="20,5,10,5" Name="btnAdd" Background="Green"/>
+                        <Button Content="Thêm" Margin="20,5,10,5" Name="btnAdd" Background="Green" Command="{Binding AddCommand}"/>
                     </StackPanel>
 
-                    <DataGrid Grid.Row="1" CanUserAddRows="False" AutoGenerateColumns="False" ItemsSource="{Binding Accounts ,UpdateSourceTrigger=PropertyChanged}" SelectedItem="{Binding SelectedAccount}">
+                    <DataGrid Grid.Row="1" CanUserAddRows="False"  AutoGenerateColumns="False" ItemsSource="{Binding Accounts ,UpdateSourceTrigger=PropertyChanged}" SelectedItem="{Binding SelectedAccount}">
                         <DataGrid.Columns>
-                            <DataGridTextColumn Header="Id" Binding="{Binding Id}"/>
-                            <DataGridTextColumn Header="Username" Binding="{Binding Username}"/>
-                            <DataGridTextColumn Header="Password" Binding="{Binding Password}"/>
-                            <DataGridTextColumn Header="Type" Binding="{Binding Type}"/>
+                            <DataGridTextColumn Header="Id" Binding="{Binding Id}" IsReadOnly="True" />
+                            <DataGridTextColumn Header="Username" Binding="{Binding Username}" IsReadOnly="True" />
+                            <DataGridTextColumn Header="Password" Binding="{Binding Password}" IsReadOnly="True" />
+                            <DataGridTextColumn Header="Type" Binding="{Binding Type}" IsReadOnly="True" />
                             <DataGridTemplateColumn Header="Delete">
                                 <DataGridTemplateColumn.CellTemplate>
                                     <DataTemplate>

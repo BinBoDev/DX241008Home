@@ -48,7 +48,6 @@ namespace DX.ViewModel
             }
         }
         private Account selectedAccount;
-
         public Account SelectedAccount
         {
             get { return selectedAccount; }
@@ -56,44 +55,29 @@ namespace DX.ViewModel
             { 
                 selectedAccount = value; 
                 OnPropertyChanged(nameof(SelectedAccount));
-                OnPropertyChanged(nameof(Username));
-                OnPropertyChanged(nameof(Password));
-                OnPropertyChanged(nameof(Type));
-                
-
             }
         }
-
-
         public ICommand AddCommand { get; set; }
         public ICommand DelCommand { get; set; }
-        public ICommand EditCommand { get; set; }
-
-
         public AccountVM()
         {
             dbContext = new DXSP();
             Accounts = new ObservableCollection<Account>(dbContext.accounts.ToList());
-            AddCommand = new RelayCommand(Add);
+            AddCommand = new RelayCommand(Add,CanAdd);
             DelCommand = new RelayCommand(Del, CanDelete);
-            EditCommand = new RelayCommand(Edit, CanEdit);
         }
-
-        private bool CanEdit(object? obj)
+        private bool CanAdd(object? obj)
         {
-            return SelectedAccount != null;
+            return false;
         }
-
-        private void Edit(object? obj)
+        private void Add(object? obj)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
-
         private bool CanDelete(object? obj)
         {
             return SelectedAccount != null;
         }
-
         private void Del(object? obj)
         {
             
@@ -107,23 +91,13 @@ namespace DX.ViewModel
                     Accounts = new ObservableCollection<Account>(dbContext.accounts.ToList());
                     OnPropertyChanged(nameof(Accounts));
                 }    
-                
-
-
             } 
                 
-        }
-
-        private void Add(object? obj)
-        {
-            throw new NotImplementedException();
         }
         public event PropertyChangedEventHandler? PropertyChanged;
         private void OnPropertyChanged(string propertyName)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-
-        
     }
 }
