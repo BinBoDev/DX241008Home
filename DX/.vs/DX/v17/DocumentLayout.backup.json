@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "D:\\OneDrive\\OneDrive - Cong ty TNHH But chi Mitsubishi Viet nam\\Desktop\\Home\\DX\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|d:\\onedrive\\onedrive - cong ty tnhh but chi mitsubishi viet nam\\desktop\\home\\dx\\dx\\view\\xuatnl.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|solutionrelative:dx\\view\\xuatnl.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|d:\\onedrive\\onedrive - cong ty tnhh but chi mitsubishi viet nam\\desktop\\home\\dx\\dx\\view\\admin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|solutionrelative:dx\\view\\admin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|d:\\onedrive\\onedrive - cong ty tnhh but chi mitsubishi viet nam\\desktop\\home\\dx\\dx\\models\\xuatnl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|solutionrelative:dx\\models\\xuatnl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|d:\\onedrive\\onedrive - cong ty tnhh but chi mitsubishi viet nam\\desktop\\home\\dx\\dx\\viewmodel\\accountvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|solutionrelative:dx\\viewmodel\\accountvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|d:\\onedrive\\onedrive - cong ty tnhh but chi mitsubishi viet nam\\desktop\\home\\dx\\dx\\view\\admin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|solutionrelative:dx\\view\\admin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|d:\\onedrive\\onedrive - cong ty tnhh but chi mitsubishi viet nam\\desktop\\home\\dx\\dx\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|solutionrelative:dx\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|d:\\onedrive\\onedrive - cong ty tnhh but chi mitsubishi viet nam\\desktop\\home\\dx\\dx\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|solutionrelative:dx\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,43 +30,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\OneDrive\\OneDrive - Cong ty TNHH But chi Mitsubishi Viet nam\\Desktop\\Home\\DX\\DX\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "DX\\MainWindow.xaml",
+              "ToolTip": "D:\\OneDrive\\OneDrive - Cong ty TNHH But chi Mitsubishi Viet nam\\Desktop\\Home\\DX\\DX\\MainWindow.xaml",
+              "RelativeToolTip": "DX\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-11T15:43:30.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\OneDrive\\OneDrive - Cong ty TNHH But chi Mitsubishi Viet nam\\Desktop\\Home\\DX\\DX\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "DX\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\OneDrive\\OneDrive - Cong ty TNHH But chi Mitsubishi Viet nam\\Desktop\\Home\\DX\\DX\\MainWindow.xaml.cs",
+              "RelativeToolTip": "DX\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAAG0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T15:32:43.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Admin.xaml.cs",
+              "DocumentMoniker": "D:\\OneDrive\\OneDrive - Cong ty TNHH But chi Mitsubishi Viet nam\\Desktop\\Home\\DX\\DX\\View\\Admin.xaml.cs",
+              "RelativeDocumentMoniker": "DX\\View\\Admin.xaml.cs",
+              "ToolTip": "D:\\OneDrive\\OneDrive - Cong ty TNHH But chi Mitsubishi Viet nam\\Desktop\\Home\\DX\\DX\\View\\Admin.xaml.cs",
+              "RelativeToolTip": "DX\\View\\Admin.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T13:46:02.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "AccountVM.cs",
+              "DocumentMoniker": "D:\\OneDrive\\OneDrive - Cong ty TNHH But chi Mitsubishi Viet nam\\Desktop\\Home\\DX\\DX\\ViewModel\\AccountVM.cs",
+              "RelativeDocumentMoniker": "DX\\ViewModel\\AccountVM.cs",
+              "ToolTip": "D:\\OneDrive\\OneDrive - Cong ty TNHH But chi Mitsubishi Viet nam\\Desktop\\Home\\DX\\DX\\ViewModel\\AccountVM.cs",
+              "RelativeToolTip": "DX\\ViewModel\\AccountVM.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAFMAAAB0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T13:25:57.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Admin.xaml",
               "DocumentMoniker": "D:\\OneDrive\\OneDrive - Cong ty TNHH But chi Mitsubishi Viet nam\\Desktop\\Home\\DX\\DX\\View\\Admin.xaml",
               "RelativeDocumentMoniker": "DX\\View\\Admin.xaml",
               "ToolTip": "D:\\OneDrive\\OneDrive - Cong ty TNHH But chi Mitsubishi Viet nam\\Desktop\\Home\\DX\\DX\\View\\Admin.xaml",
               "RelativeToolTip": "DX\\View\\Admin.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-10T14:26:10.245Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "XuatNL.cs",
-              "DocumentMoniker": "D:\\OneDrive\\OneDrive - Cong ty TNHH But chi Mitsubishi Viet nam\\Desktop\\Home\\DX\\DX\\Models\\XuatNL.cs",
-              "RelativeDocumentMoniker": "DX\\Models\\XuatNL.cs",
-              "ToolTip": "D:\\OneDrive\\OneDrive - Cong ty TNHH But chi Mitsubishi Viet nam\\Desktop\\Home\\DX\\DX\\Models\\XuatNL.cs",
-              "RelativeToolTip": "DX\\Models\\XuatNL.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T14:18:19.617Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "XuatNL.xaml",
-              "DocumentMoniker": "D:\\OneDrive\\OneDrive - Cong ty TNHH But chi Mitsubishi Viet nam\\Desktop\\Home\\DX\\DX\\View\\XuatNL.xaml",
-              "RelativeDocumentMoniker": "DX\\View\\XuatNL.xaml",
-              "ToolTip": "D:\\OneDrive\\OneDrive - Cong ty TNHH But chi Mitsubishi Viet nam\\Desktop\\Home\\DX\\DX\\View\\XuatNL.xaml*",
-              "RelativeToolTip": "DX\\View\\XuatNL.xaml*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-10T14:01:33.023Z",
+              "WhenOpened": "2024-10-11T13:25:26.572Z",
               "EditorCaption": ""
             }
           ]

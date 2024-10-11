@@ -10,6 +10,10 @@
         Icon="/DX;component/View/Image/Uni.ico"
         Loaded="Window_Loaded"
         >
+    <Window.Resources>
+        <local:BoolToIntConverter x:Key="BoolToIntConverter"/>
+    </Window.Resources>
+        
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
@@ -43,12 +47,14 @@
                     </Grid.RowDefinitions>
                     <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                         <TextBox
+                              Text="{Binding Username,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
                               Name="txtUsername"  
                               Margin="5"
                               VerticalAlignment="Center"
                               materialDesign:HintAssist.Hint="Tên đăng nhập"
                               Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
                         <TextBox
+                              Text="{Binding Password,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
                               Name="txtPasword"   
                               Margin="5"
                               VerticalAlignment="Center"
@@ -56,14 +62,14 @@
                               Style="{StaticResource MaterialDesignFloatingHintTextBox}" /> 
                         <RadioButton 
                               Content="Admin" Margin="20,5,10,5" Name="rbAdmin" Tag="1"
-                              
+                              IsChecked="{Binding Type,Converter={StaticResource BoolToIntConverter},ConverterParameter=1}"
                               />
                         <RadioButton Content="Sub" Margin="5" Name="rbSub" Tag="2"
-                                     
+                              IsChecked="{Binding Type,Converter={StaticResource BoolToIntConverter},ConverterParameter=2}"       
                                      />
                         <RadioButton 
                                      Content="Nomal" Name="rbNomal" Tag="3"
-                                   
+                              IsChecked="{Binding Type,Converter={StaticResource BoolToIntConverter},ConverterParameter=3}"     
                                      />
                         <Button Content="Thêm" Margin="20,5,10,5" Name="btnAdd" Background="Green" Command="{Binding AddCommand}"/>
                     </StackPanel>

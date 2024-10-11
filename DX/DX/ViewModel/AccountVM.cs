@@ -68,11 +68,21 @@ namespace DX.ViewModel
         }
         private bool CanAdd(object? obj)
         {
-            return false;
+            return !string.IsNullOrWhiteSpace(Username) && !string.IsNullOrWhiteSpace(Password) && Type > 0;
+            //return !string.IsNullOrWhiteSpace(Username) && !string.IsNullOrWhiteSpace(Password) && Type > 0;
+            //return Type >0;
         }
         private void Add(object? obj)
         {
-            //throw new NotImplementedException();
+            dbContext.accounts.Add(new Account() { Username = Username, Password = password ,Type = Type});
+            dbContext.SaveChanges();
+            Accounts = new ObservableCollection<Account>(dbContext.accounts.ToList());
+            OnPropertyChanged(nameof(Accounts));
+            Username = string.Empty;
+            Password = string.Empty;
+            Type = 0;
+            OnPropertyChanged(nameof(Username));OnPropertyChanged(nameof(Password));OnPropertyChanged(nameof(Type));    
+
         }
         private bool CanDelete(object? obj)
         {
@@ -89,7 +99,11 @@ namespace DX.ViewModel
                     dbContext.SaveChanges();
                     SelectedAccount = null;
                     Accounts = new ObservableCollection<Account>(dbContext.accounts.ToList());
+                    Username = string.Empty;
+                    Password = string.Empty;
+                    Type = 0;
                     OnPropertyChanged(nameof(Accounts));
+
                 }    
             } 
                 

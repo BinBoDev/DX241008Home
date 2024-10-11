@@ -1,6 +1,7 @@
 ﻿using DX.ViewModel;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -37,6 +38,22 @@ namespace DX.View
             this.Hide();
             xuatNL.Show();
             this.Show();
+        }
+    }
+    public class BoolToIntConverter : IValueConverter
+    {
+        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            if (value is int intValue && parameter is string stringParameter && int.TryParse(stringParameter, out int paramValue))
+            {
+                return intValue == paramValue;
+            }
+            return false;
+        }
+        
+        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            return (bool)value ? int.Parse(parameter.ToString()) : 0;
         }
     }
 }

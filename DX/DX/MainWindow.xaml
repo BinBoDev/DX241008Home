@@ -50,7 +50,7 @@
                         Grid.Column="1"
                         Margin="5"
                         Name="txtUsername"
-                                
+                        Text="p.tan@mpvuni.com.vn"    
                         VerticalAlignment="Center"
                         materialDesign:HintAssist.Hint="Tên đang nhập"
                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"

@@ -564,3 +564,4 @@ D:\OneDrive\OneDrive - Cong ty TNHH But chi Mitsubishi Viet nam\Desktop\Home\DX\
 D:\OneDrive\OneDrive - Cong ty TNHH But chi Mitsubishi Viet nam\Desktop\Home\DX\DX\obj\Debug\net8.0-windows\ref\DX.dll
 D:\OneDrive\OneDrive - Cong ty TNHH But chi Mitsubishi Viet nam\Desktop\Home\DX\DX\obj\Debug\net8.0-windows\View\XuatNL.g.cs
 D:\OneDrive\OneDrive - Cong ty TNHH But chi Mitsubishi Viet nam\Desktop\Home\DX\DX\obj\Debug\net8.0-windows\View\XuatNL.baml
+D:\OneDrive\OneDrive - Cong ty TNHH But chi Mitsubishi Viet nam\Desktop\Home\DX\DX\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs

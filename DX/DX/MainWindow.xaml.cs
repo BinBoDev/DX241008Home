@@ -63,13 +63,56 @@ namespace DX
         {
             DragMove();
         }
-
+        private bool CheckUser(string username)
+            {
+                using var dbcontex = new DXSP();
+                if (dbcontex.accounts.Any(a => a.Username == username))
+                    {
+                    return true;
+                    }
+                else
+                {
+                    return false;   
+                }
+            }
+        private bool CheckPassword( string username,string password)
+        {
+            using var dbcontex = new DXSP();
+            if(CheckUser(username))
+            {
+               var _account = dbcontex.accounts.FirstOrDefault(a => a.Username == username);
+                if (_account.Password == password)
+                {
+                    return true;
+                }
+                
+            }
+            return false;
+        }
         private void btnlogin_Click(object sender, RoutedEventArgs e)
         {
-            Admin adminWindow = new Admin();
-            this.Hide();
-            adminWindow.Show();
-            this.Show();
+            if (CheckUser(txtUsername.Text))
+            {
+                if(CheckPassword(txtUsername.Text,txtPassword.Password))
+                {
+                    Admin adminWindow = new Admin();
+                    this.Hide();
+                    adminWindow.ShowDialog();
+                    txtPassword.Clear();
+                    this.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Sai mật khẩu", "Lỗi đăng nhập", MessageBoxButton.OK, MessageBoxImage.Error);
+                    txtPassword.Clear();
+                    txtPassword.Focus();
+                }    
+            }
+            else
+            {
+                MessageBox.Show("Sai tên đăng nhập","Lỗi đăng nhập",MessageBoxButton.OK,MessageBoxImage.Error);
+            }
+            
             
         }
 
