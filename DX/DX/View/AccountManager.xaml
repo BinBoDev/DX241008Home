@@ -1,0 +1,99 @@
+﻿<Window x:Class="DX.View.AccountManager"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:DX.View"
+        mc:Ignorable="d"
+        ResizeMode="NoResize"
+        Icon="/DX;component/View/Image/Uni.ico"
+        VerticalAlignment="Center"
+        WindowStartupLocation="CenterScreen"
+        Title="Quản lý tài khoản" Height="500" Width="500">
+    <Window.Resources>
+        <local:BoolToIntConverter x:Key="BoolToIntConverter"/>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <materialDesign:Card Margin="5" BorderThickness="0">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+            </StackPanel>
+        </materialDesign:Card>
+        <materialDesign:Card Grid.Row="1" Margin="5">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <TextBox
+                             Text="{Binding Username,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
+                             Name="txtUsername"  
+                             Margin="5"
+                             VerticalAlignment="Center"
+                             materialDesign:HintAssist.Hint="Tên đăng nhập"
+                             Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                        <TextBox
+                             Text="{Binding Password,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
+                             Name="txtPasword"   
+                             Margin="5"
+                             VerticalAlignment="Center"
+                             materialDesign:HintAssist.Hint="Password"
+                             Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                        <RadioButton 
+                             Content="Admin" Margin="20,5,10,5" Name="rbAdmin" Tag="1"
+                             IsChecked="{Binding Type,Converter={StaticResource BoolToIntConverter},ConverterParameter=1}"
+                             />
+                        <RadioButton Content="Sub" Margin="5" Name="rbSub" Tag="2"
+                             IsChecked="{Binding Type,Converter={StaticResource BoolToIntConverter},ConverterParameter=2}"       
+                                    />
+                        <RadioButton 
+                                    Content="Nomal" Name="rbNomal" Tag="3"
+                             IsChecked="{Binding Type,Converter={StaticResource BoolToIntConverter},ConverterParameter=3}"     
+                                    />
+                        <Button Content="Thêm" Margin="20,5,10,5" Name="btnAdd" Background="Green" Command="{Binding AddCommand}"/>
+                    </StackPanel>
+
+                    <DataGrid Grid.Row="1" CanUserAddRows="False"  AutoGenerateColumns="False" ItemsSource="{Binding Accounts ,UpdateSourceTrigger=PropertyChanged}" SelectedItem="{Binding SelectedAccount}">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Id" Binding="{Binding Id}" IsReadOnly="True" />
+                            <DataGridTextColumn Header="Username" Binding="{Binding Username}" IsReadOnly="True" />
+                            <DataGridTextColumn Header="Password" Binding="{Binding Password}" IsReadOnly="True">
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="Text" Value="****"/>
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTextColumn Header="Type" Binding="{Binding Type}" IsReadOnly="True"/>
+                            <DataGridTemplateColumn Header="Delete">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Button Name="btnDel" Background="Red" Command="{Binding DataContext.DelCommand, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}">
+                                            <StackPanel Orientation="Horizontal">
+                                                <materialDesign:PackIcon Kind="DeleteOutline"  />
+                                                <TextBlock Text="Xóa"/>
+                                            </StackPanel>
+                                        </Button>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+                <Grid Grid.Row="1">
+
+                </Grid>
+            </Grid>
+        </materialDesign:Card>
+    </Grid>
+</Window>

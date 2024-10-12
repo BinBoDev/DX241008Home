@@ -32,28 +32,50 @@ namespace DX.View
             this.WindowState = WindowState.Maximized;
         }
 
-        private void nextPage_XuatNL_Click(object sender, RoutedEventArgs e)
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
-            XuatNL xuatNL = new XuatNL();
+            AccountManager accountManager = new AccountManager();
+            //this.Hide();
+            //accountManager.ShowDialog();
+            //this.Show();
+            accountManager.Closed += AccountManager_Closed;
+            accountManager.Show();
             this.Hide();
+        }
+
+        private void AccountManager_Closed(object? sender, EventArgs e)
+        {
+            this.Show();
+        }
+
+        private void XuatNL_Click(object sender, RoutedEventArgs e)
+        {
+            XuatNLWD xuatNL = new XuatNLWD();
+            xuatNL.Closed += XuatNL_Closed;
             xuatNL.Show();
+            this.Hide();
+
+        }
+
+        private void XuatNL_Closed(object? sender, EventArgs e)
+        {
             this.Show();
         }
     }
-    public class BoolToIntConverter : IValueConverter
-    {
-        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
-        {
-            if (value is int intValue && parameter is string stringParameter && int.TryParse(stringParameter, out int paramValue))
-            {
-                return intValue == paramValue;
-            }
-            return false;
-        }
+    //public class BoolToIntConverter : IValueConverter
+    //{
+    //    public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+    //    {
+    //        if (value is int intValue && parameter is string stringParameter && int.TryParse(stringParameter, out int paramValue))
+    //        {
+    //            return intValue == paramValue;
+    //        }
+    //        return false;
+    //    }
         
-        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
-        {
-            return (bool)value ? int.Parse(parameter.ToString()) : 0;
-        }
-    }
+    //    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+    //    {
+    //        return (bool)value ? int.Parse(parameter.ToString()) : 0;
+    //    }
+    //}
 }

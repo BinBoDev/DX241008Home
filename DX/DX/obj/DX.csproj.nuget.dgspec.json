@@ -45,6 +45,18 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "dependencies": {
+            "EPPlus": {
+              "target": "Package",
+              "version": "[7.4.1, )"
+            },
+            "ExcelDataReader": {
+              "target": "Package",
+              "version": "[3.7.0, )"
+            },
+            "ExcelDataReader.DataSet": {
+              "target": "Package",
+              "version": "[3.7.0, )"
+            },
             "MaterialDesignThemes": {
               "target": "Package",
               "version": "[5.1.0, )"

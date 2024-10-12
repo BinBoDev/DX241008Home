@@ -19,85 +19,58 @@
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
+        <!--Grid.Row 0  Menu Bar-->
         <materialDesign:Card Margin="5" BorderThickness="0">
             <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
-                <Menu HorizontalAlignment="Center" >
-                    <MenuItem Header="File" Height="36" Margin="2"  >
-                        
+                <Menu IsMainMenu="True">
+                    <!--Menu Admin-->
+                    <MenuItem
+                        Header="Admin" Icon="{materialDesign:PackIcon Kind= AccountCogOutline}" VerticalAlignment="Center" HorizontalAlignment="Left"  >
+                        <MenuItem
+                            Click="MenuItem_Click"
+                            Header="Tài khoản"
+                            Icon="{materialDesign:PackIcon Kind=AccountEditOutline}" />
+                        <MenuItem
+                            Header="Sản phẩm" 
+                            Icon="{materialDesign:PackIcon Kind=AlphaPCircleOutline}"/>
+                        <MenuItem
+                            Header="Dây chuyền"
+                            Icon="{materialDesign:PackIcon Kind=ExitToApp}"/>
+                        <MenuItem
+                            Header="Nguyên liệu"
+                            Icon="{materialDesign:PackIcon Kind=ExitToApp}"
+                            />
+                        <MenuItem
+                            Name="XuatNL"
+                            Click="XuatNL_Click"
+                            Header="Nguyên liệu xuất"
+                            Icon="{materialDesign:PackIcon Kind=ExitToApp}"
+                            />
+                        <MenuItem
+                            Header="POM"
+                            Icon="{materialDesign:PackIcon Kind=ExitToApp}"
+                            />
                     </MenuItem>
-                    <MenuItem Header="Edit" Height="36" Margin="2" >
-                        
+                    <!--Menu Edit-->
+                    <MenuItem
+                        Header="Sản xuất">
+                        <MenuItem
+                            Header="Kế hoạch sản xuất"
+                            Icon="{materialDesign:PackIcon Kind=ContentCut}" />
+                        <MenuItem
+                            Header="Chỉ thị sản xuất"
+                            Icon="{materialDesign:PackIcon Kind=ContentCopy}" />
+                        <MenuItem
+                            Header="Xuất hàng"
+                            Icon="{materialDesign:PackIcon Kind=ContentPaste}" />
                     </MenuItem>
                 </Menu>
-                <Button Margin="2" x:Name="nextPage_XuatNL" Content="Xuất liệu" Click="nextPage_XuatNL_Click">
-                    
-                </Button>
             </StackPanel>
         </materialDesign:Card>
+        <!-- Grid.Row 1-->
         <materialDesign:Card Grid.Row="1" Margin="5">
             <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
-                        <TextBox
-                              Text="{Binding Username,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
-                              Name="txtUsername"  
-                              Margin="5"
-                              VerticalAlignment="Center"
-                              materialDesign:HintAssist.Hint="Tên đăng nhập"
-                              Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
-                        <TextBox
-                              Text="{Binding Password,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
-                              Name="txtPasword"   
-                              Margin="5"
-                              VerticalAlignment="Center"
-                              materialDesign:HintAssist.Hint="Password"
-                              Style="{StaticResource MaterialDesignFloatingHintTextBox}" /> 
-                        <RadioButton 
-                              Content="Admin" Margin="20,5,10,5" Name="rbAdmin" Tag="1"
-                              IsChecked="{Binding Type,Converter={StaticResource BoolToIntConverter},ConverterParameter=1}"
-                              />
-                        <RadioButton Content="Sub" Margin="5" Name="rbSub" Tag="2"
-                              IsChecked="{Binding Type,Converter={StaticResource BoolToIntConverter},ConverterParameter=2}"       
-                                     />
-                        <RadioButton 
-                                     Content="Nomal" Name="rbNomal" Tag="3"
-                              IsChecked="{Binding Type,Converter={StaticResource BoolToIntConverter},ConverterParameter=3}"     
-                                     />
-                        <Button Content="Thêm" Margin="20,5,10,5" Name="btnAdd" Background="Green" Command="{Binding AddCommand}"/>
-                    </StackPanel>
-
-                    <DataGrid Grid.Row="1" CanUserAddRows="False"  AutoGenerateColumns="False" ItemsSource="{Binding Accounts ,UpdateSourceTrigger=PropertyChanged}" SelectedItem="{Binding SelectedAccount}">
-                        <DataGrid.Columns>
-                            <DataGridTextColumn Header="Id" Binding="{Binding Id}" IsReadOnly="True" />
-                            <DataGridTextColumn Header="Username" Binding="{Binding Username}" IsReadOnly="True" />
-                            <DataGridTextColumn Header="Password" Binding="{Binding Password}" IsReadOnly="True" />
-                            <DataGridTextColumn Header="Type" Binding="{Binding Type}" IsReadOnly="True" />
-                            <DataGridTemplateColumn Header="Delete">
-                                <DataGridTemplateColumn.CellTemplate>
-                                    <DataTemplate>
-                                        <Button Name="btnDel" Background="Red" Command="{Binding DataContext.DelCommand, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}">
-                                            <StackPanel Orientation="Horizontal">
-                                                <materialDesign:PackIcon Kind="DeleteOutline"  />
-                                                <TextBlock Text="Xóa"/>
-                                            </StackPanel>
-                                        </Button>
-                                    </DataTemplate>
-                                </DataGridTemplateColumn.CellTemplate>
-                            </DataGridTemplateColumn>
-                        </DataGrid.Columns>
-                    </DataGrid>
-                </Grid>
-                <Grid Grid.Row="1">
-                    
-                </Grid>
+                
             </Grid>
         </materialDesign:Card>
     </Grid>

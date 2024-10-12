@@ -25,8 +25,8 @@ namespace DX.Models
         [StringLength(6)]
         public string KehoachThangNam { get; set; }
         [Required]
-        [StringLength(6)]
+        [StringLength(20)]
         public string Index { get; set; }
-        public string Xuatkhosanxuatngay { get; set; }
+        public string? Xuatkhosanxuatngay { get; set; }
     }
 }

@@ -96,10 +96,14 @@ namespace DX
                 if(CheckPassword(txtUsername.Text,txtPassword.Password))
                 {
                     Admin adminWindow = new Admin();
-                    this.Hide();
-                    adminWindow.ShowDialog();
+                    //this.Hide();
+                    //adminWindow.ShowDialog();
+                    //txtPassword.Clear();
+                    //this.Show();
+                    adminWindow.Closed += AdminWindow_Closed;
+                    adminWindow.Show();
                     txtPassword.Clear();
-                    this.Show();
+                    this.Hide();
                 }
                 else
                 {
@@ -114,6 +118,11 @@ namespace DX
             }
             
             
+        }
+
+        private void AdminWindow_Closed(object? sender, EventArgs e)
+        {
+            this.Show();
         }
 
         private void btnexit_Click(object sender, RoutedEventArgs e)

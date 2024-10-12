@@ -7,10 +7,13 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="View\AccountManager.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\Admin.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="View\XuatNL.xaml.cs">
+    <Compile Update="View\XuatNLWD.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -18,7 +21,10 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="View\XuatNL.xaml">
+    <Page Update="View\AccountManager.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\XuatNLWD.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
