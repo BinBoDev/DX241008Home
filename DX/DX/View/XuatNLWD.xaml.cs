@@ -46,5 +46,10 @@ namespace DX.View
         {
            
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            this.WindowState = WindowState.Maximized;
+        }
     }
 }

@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
+using System.ComponentModel;
 using System.Data;
 using System.IO;
 using System.Linq;
@@ -19,7 +20,101 @@ namespace DX.ViewModel
     public class XuatNLVM : INotifyCollectionChanged
     {
         private readonly DXSP dbContex;
-        //public ObservableCollection<XuatNL> XuatNLs { get; set; }
+        public ObservableCollection<XuatNL> XuatNLs { get; set; }
+
+        private int id;
+
+        public int Id
+        {
+            get { return id; }
+            set 
+            { 
+                id = value;
+                OnPropertyChanged(nameof(Id));
+            }
+        }
+        private int codeNL;
+
+        public int CodeNL
+        {
+            get { return codeNL; }
+            set
+            {
+                codeNL = value;
+                OnPropertyChanged(nameof(CodeNL));
+            }
+        }
+        private string tenNL;
+
+        public string TenNL
+        {
+            get { return tenNL; }
+            set
+            {
+                tenNL = value;
+                OnPropertyChanged(nameof(TenNL));
+            }
+        }
+        private int soluongxuat;
+
+        public int Soluongxuat
+        {
+            get { return soluongxuat; }
+            set
+            {
+                soluongxuat = value;
+                OnPropertyChanged(nameof(Soluongxuat));
+            }
+        }
+        private DateTime ngaygioxuatthucte;
+
+        public DateTime Ngaygioxuatthucte
+        {
+            get { return ngaygioxuatthucte; }
+            set
+            {
+                ngaygioxuatthucte = value;
+                OnPropertyChanged(nameof(Ngaygioxuatthucte));
+            }
+        }
+        private string kehoachThangNam;
+
+        public string KehoachThangNam
+        {
+            get { return kehoachThangNam; }
+            set
+            {
+                kehoachThangNam = value;
+                OnPropertyChanged(nameof(KehoachThangNam));
+            }
+        }
+        private string index;
+
+        public string Index
+        {
+            get { return index; }
+            set
+            {
+                index = value;
+                OnPropertyChanged(nameof(Index));
+            }
+        }
+        private string xuatkhosanxuatngay;
+
+        public string Xuatkhosanxuatngay
+        {
+            get { return xuatkhosanxuatngay; }
+            set
+            {
+                xuatkhosanxuatngay = value;
+                OnPropertyChanged(nameof(Xuatkhosanxuatngay));
+            }
+        }
+        public event PropertyChangedEventHandler? PropertyChanged;
+        private void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
 
         public ICommand ImportCommand { get; set; }
 
@@ -28,6 +123,7 @@ namespace DX.ViewModel
         {
             dbContex = new DXSP();
             ImportCommand = new RelayCommand(Importcmd);
+            XuatNLs = new ObservableCollection<XuatNL>(dbContex.xuatNLs.ToList());
         }
 
         //private bool CanImporcmd(object? obj)

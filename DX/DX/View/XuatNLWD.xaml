@@ -7,9 +7,13 @@
         xmlns:local="clr-namespace:DX.View"
         mc:Ignorable="d"
         Icon="/DX;component/View/Image/Uni.ico"
+        Loaded="Window_Loaded"
         VerticalAlignment="Center"
         WindowStartupLocation="CenterScreen"
-        Title="Xuất nguyên liệu cho sản xuất" Height="450" Width="800">
+        Title="Xuất nguyên liệu cho sản xuất" Height="450" Width="800"
+        
+        >
+    
     <Grid>
         <materialDesign:Card>
             <Grid>
@@ -35,17 +39,17 @@
                 </materialDesign:Card>
                 <materialDesign:Card Margin="2" Grid.Row="1" >
                     <Border>
-                        <ScrollViewer>
-                            <DataGrid  CanUserAddRows="False" AutoGenerateColumns="False" Name="dtgXuatNL">
+                        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                            <DataGrid  CanUserAddRows="False" AutoGenerateColumns="False" Name="dtgXuatNL" ItemsSource="{Binding XuatNLs ,UpdateSourceTrigger=PropertyChanged}">
                                 <DataGrid.Columns>
-                                    <DataGridTextColumn Header="Id"/>
-                                    <DataGridTextColumn Header="CodeNL"/>
-                                    <DataGridTextColumn Header="TenNL"/>
-                                    <DataGridTextColumn Header="Soluongxuat"/>
-                                    <DataGridTextColumn Header="Ngaygioxuatthucte"/>
-                                    <DataGridTextColumn Header="KehoachThangNam"/>
-                                    <DataGridTextColumn Header="Index"/>
-                                    <DataGridTextColumn Header="Xuatkhosanxuatngay"/>
+                                    <DataGridTextColumn Header="Id" Binding="{Binding Id}" IsReadOnly="True" />
+                                    <DataGridTextColumn Header="CodeNL" Binding="{Binding CodeNL}" IsReadOnly="True" Foreground="Red"/>
+                                    <DataGridTextColumn Header="TenNL" Binding="{Binding TenNL}" IsReadOnly="True" Foreground="Blue"/>
+                                    <DataGridTextColumn Header="Soluongxuat" Binding="{Binding Soluongxuat}" IsReadOnly="True" />
+                                    <DataGridTextColumn Header="Ngaygioxuatthucte" Binding="{Binding Ngaygioxuatthucte}" IsReadOnly="True"/>
+                                    <DataGridTextColumn Header="KehoachThangNam" Binding="{Binding KehoachThangNam}" IsReadOnly="True" Foreground="Green"/>
+                                    <DataGridTextColumn Header="Index" Binding="{Binding Index}" IsReadOnly="True" Foreground="Red"/>
+                                    <DataGridTextColumn Header="Xuatkhosanxuatngay" Binding="{Binding Xuatkhosanxuatngay}" IsReadOnly="True"/>
                                 </DataGrid.Columns>
                             </DataGrid>
                         </ScrollViewer>
