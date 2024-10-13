@@ -20,27 +20,55 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="40"/>
                     <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
                     <RowDefinition Height="40"/>
                 </Grid.RowDefinitions>
+                <!-- Dòng đầu tiên Grid.Row 0-->
                 <materialDesign:Card Margin="2" Grid.Row="0">
                     <StackPanel Orientation="Horizontal">
-                        <Button Content="Tìm File" Margin="2" Width="120" Name="btnSearchFile" Click="btnSearchFile_Click"/>
-                        <TextBox
-                            Width="300"
-                            Margin="2"
-                            Name="txtFilePath"
-                            VerticalAlignment="Center"
-                            materialDesign:HintAssist.Hint="File Path"
-                            Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-                            />
-                        <Button Content="Nhập" Margin="2" Width="120" Name="btnImport" HorizontalAlignment="Right" Click="btnImport_Click" Command="{Binding ImportCommand}"/>
-
+                        <Button Command="{Binding FillDataCammand}">
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                <materialDesign:PackIcon Kind="ClipboardTextSearchOutline" Margin="2,0,2,0"/>
+                                <TextBlock Text="Filter" Margin="2,0,2,0"/>
+                            </StackPanel>
+                        </Button>
+                        <DatePicker
+                              SelectedDate="{Binding StartDay,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
+                              
+                              Margin="10,2,10,2"
+                              Width="100"
+                              materialDesign:HintAssist.Hint="Ngày bắt đầu"
+                              materialDesign:TextFieldAssist.HasClearButton="True"
+                              Style="{StaticResource MaterialDesignFloatingHintDatePicker}"
+                              />
+                        <DatePicker
+                              SelectedDate="{Binding EndDay,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
+                              Margin="10,2,10,2"
+                              Width="100"
+                              materialDesign:HintAssist.Hint="Ngày kết thúc"
+                              materialDesign:TextFieldAssist.HasClearButton="True"
+                              Style="{StaticResource MaterialDesignFloatingHintDatePicker}"
+                              />
+                        <Grid Width="120">
+                            <Button
+                                Command="{Binding ImportCommand}"
+                                Background="Green"
+                                Margin="2,0"
+                                materialDesign:ButtonProgressAssist.IsIndeterminate="True"
+                                materialDesign:ButtonProgressAssist.IsIndicatorVisible="True"
+                                materialDesign:ButtonProgressAssist.Value="-1"
+                                Content="Import Data"
+                                IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+                                Style="{StaticResource MaterialDesignRaisedButton}"
+                                />
+                        </Grid>
                     </StackPanel>
                 </materialDesign:Card>
+                <!-- Dòng thứ 2 hiển thị lên DataGrid Grid.Row 1-->
                 <materialDesign:Card Margin="2" Grid.Row="1" >
-                    <Border>
+                    <Border BorderBrush="Black" BorderThickness="1">
                         <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
-                            <DataGrid  CanUserAddRows="False" AutoGenerateColumns="False" Name="dtgXuatNL" ItemsSource="{Binding XuatNLs ,UpdateSourceTrigger=PropertyChanged}">
+                            <DataGrid  CanUserAddRows="False" AutoGenerateColumns="False" Name="dtgXuatNL" ItemsSource="{Binding XuatNLs,Mode=TwoWay}">
                                 <DataGrid.Columns>
                                     <DataGridTextColumn Header="Id" Binding="{Binding Id}" IsReadOnly="True" />
                                     <DataGridTextColumn Header="CodeNL" Binding="{Binding CodeNL}" IsReadOnly="True" Foreground="Red"/>
@@ -50,6 +78,18 @@
                                     <DataGridTextColumn Header="KehoachThangNam" Binding="{Binding KehoachThangNam}" IsReadOnly="True" Foreground="Green"/>
                                     <DataGridTextColumn Header="Index" Binding="{Binding Index}" IsReadOnly="True" Foreground="Red"/>
                                     <DataGridTextColumn Header="Xuatkhosanxuatngay" Binding="{Binding Xuatkhosanxuatngay}" IsReadOnly="True"/>
+                                    <DataGridTemplateColumn Header="Delete">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <Button Name="btnDel" Background="Red" Command="{Binding}">
+                                                    <StackPanel Orientation="Horizontal">
+                                                        <materialDesign:PackIcon Kind="DeleteOutline"  />
+                                                        <TextBlock Text="Xóa"/>
+                                                    </StackPanel>
+                                                </Button>
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
                                 </DataGrid.Columns>
                             </DataGrid>
                         </ScrollViewer>
@@ -57,7 +97,62 @@
 
                     </Border>
                 </materialDesign:Card>
-                
+                <!-- Show File Excel Grid.Row 2-->
+                <materialDesign:Card Grid.Row="2" Margin="2">
+                    <Border BorderBrush="Black" BorderThickness="1">
+                        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                            <DataGrid  CanUserAddRows="False" AutoGenerateColumns="False" Name="dtgShowFileExcel" ItemsSource="{Binding ExcelShow,Mode=TwoWay}" SelectedItem="{Binding SelectedXuatNL,Mode=TwoWay}">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="CodeNL" Binding="{Binding CodeNL}" IsReadOnly="True"/>
+                                    <DataGridTextColumn Header="TenNL" Binding="{Binding TenNL}" IsReadOnly="True" />
+                                    <DataGridTextColumn Header="Soluongxuat" Binding="{Binding Soluongxuat}" IsReadOnly="True" />
+                                    <DataGridTextColumn Header="Ngaygioxuatthucte" Binding="{Binding Ngaygioxuatthucte}" IsReadOnly="True"/>
+                                    <DataGridTextColumn Header="KehoachThangNam" Binding="{Binding KehoachThangNam}" IsReadOnly="True" />
+                                    <DataGridTextColumn Header="Index" Binding="{Binding Index}" IsReadOnly="True"/>
+                                    <DataGridTextColumn Header="Xuatkhosanxuatngay" Binding="{Binding Xuatkhosanxuatngay}" IsReadOnly="True"/>
+                                    <DataGridTemplateColumn Header="Select">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <CheckBox Name="ckSelectd" Background="Red" Command="{Binding DataContext.IsCheckCommand, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}" IsChecked="{Binding isSelectedRow}">
+                                                    <StackPanel Orientation="Horizontal">
+                                                        <materialDesign:PackIcon Kind="CursorDefaultClickOutline"  />
+                                                        <TextBlock Text="Chọn"/>
+                                                    </StackPanel>
+                                                </CheckBox>
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                        </ScrollViewer>
+
+
+                    </Border>
+
+                </materialDesign:Card>
+                <!-- Dòng thứ 4 CRUD Data Grid.Row 3-->
+                <materialDesign:Card Grid.Row="3" Margin="2">
+                    <StackPanel Orientation="Horizontal">
+                        <Button Margin="2" Background="Green" Command="{Binding ShowExcelCommand}">
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                <materialDesign:PackIcon Kind="Search"  />
+                                <TextBlock Text="Tìm File"/>
+                            </StackPanel>
+                        </Button>
+                        <Button Margin="2" Background="Red" Command="{Binding CheckCommand}">
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                <materialDesign:PackIcon Kind="Check"  />
+                                <TextBlock Text="Check"/>
+                            </StackPanel>
+                        </Button>
+                        <Button Margin="2" Background="Indigo" Command="{Binding UpDateDataGrig}">
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                <materialDesign:PackIcon Kind="Import"  />
+                                <TextBlock Text="Import"/>
+                            </StackPanel>
+                        </Button>
+                    </StackPanel>
+                </materialDesign:Card>
             </Grid>
         </materialDesign:Card>
     </Grid>

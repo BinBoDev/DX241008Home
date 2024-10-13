@@ -27,29 +27,16 @@ namespace DX.View
         public XuatNLWD()
         {
             InitializeComponent();
-            DataContext = new XuatNLVM();
+            this.DataContext = new XuatNLVM();
         }
         // Tìm file để nhập
-        private void btnSearchFile_Click(object sender, RoutedEventArgs e)
-        {
-            //OpenFileDialog openFileDialog = new OpenFileDialog();
-            //openFileDialog.Title = "Tìm file";
-            //openFileDialog.Filter = "Excel Files (*.xlsx;*.xls)|*.xlsx;*.xls";
-            //if (openFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-            //{
-            //    // Lấy đường dẫn file và hiển thị trong TextBox
-            //    txtFilePath.Text = openFileDialog.FileName;
-            //}
-        }
-        //Nhập file vào CSDL
-        private void btnImport_Click(object sender, RoutedEventArgs e)
-        {
-           
-        }
-
+        #region Phóng to màn hình
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             this.WindowState = WindowState.Maximized;
         }
+
+        #endregion
+
     }
 }

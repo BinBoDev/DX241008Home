@@ -11,8 +11,8 @@ namespace DX.Models
     [Table("XuatNL")]
     public class XuatNL
     {
-        public int Id { get; set; }
         [Key]
+        public int Id { get; set; }
         [Required]
         public int CodeNL { get; set; }
         [Required]
