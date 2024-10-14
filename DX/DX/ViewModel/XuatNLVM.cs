@@ -259,13 +259,13 @@ namespace DX.ViewModel
 
                             var excelFile = new XuatNL()
                             {
-                                CodeNL = row["CodeNL"] != DBNull.Value ? Convert.ToInt32(row["CodeNL"]) : 0,
-                                TenNL = row["TenNL"].ToString(),
-                                Soluongxuat = row["Soluongxuat"] != DBNull.Value ? Convert.ToInt32(row["Soluongxuat"]) : 0,
-                                Ngaygioxuatthucte = Convert.ToDateTime(row["Ngaygioxuatthucte"]),
-                                KehoachThangNam = row["KehoachThangNam"].ToString(),
+                                CodeNL = row["Code NL"] != DBNull.Value ? Convert.ToInt32(row["Code NL"]) : 0,
+                                TenNL = row["Ten NL"].ToString(),
+                                Soluongxuat = row["So luong xuat"] != DBNull.Value ? Convert.ToInt32(row["So luong xuat"]) : 0,
+                                Ngaygioxuatthucte = Convert.ToDateTime(row["Ngay gio xuat thuc te"]),
+                                KehoachThangNam = row["KH thang nam"].ToString(),
                                 Index = row["Index"].ToString(),
-                                Xuatkhosanxuatngay = row["Xuatkhosanxuatngay"]?.ToString()
+                                Xuatkhosanxuatngay = row["Xuat kho cho SX ngay"]?.ToString()
                             };
 
                             ExcelShow.Add(excelFile);
@@ -357,19 +357,19 @@ namespace DX.ViewModel
                         {
                             var xuatNL = new XuatNL()
                             {
-                                CodeNL = row["CodeNL"] != DBNull.Value ? Convert.ToInt32(row["CodeNL"]) : throw new Exception("CodeNL không được trống"),
-                                TenNL = row["TenNL"].ToString(),
-                                Soluongxuat = row["Soluongxuat"] != DBNull.Value ? Convert.ToInt32(row["Soluongxuat"]) : 0,
-                                Ngaygioxuatthucte = Convert.ToDateTime(row["Ngaygioxuatthucte"]),
-                                KehoachThangNam = row["KehoachThangNam"].ToString(),
+                                CodeNL = row["Code NL"] != DBNull.Value ? Convert.ToInt32(row["Code NL"]) : throw new Exception("CodeNL không được trống"),
+                                TenNL = row["Ten NL"].ToString(),
+                                Soluongxuat = row["So luong xuat"] != DBNull.Value ? Convert.ToInt32(row["So luong xuat"]) : 0,
+                                Ngaygioxuatthucte = Convert.ToDateTime(row["Ngay gio xuat thuc te"]),
+                                KehoachThangNam = row["KH thang nam"].ToString(),
                                 Index = row["Index"].ToString(),
-                                Xuatkhosanxuatngay = row["Xuatkhosanxuatngay"] != DBNull.Value ? row["Xuatkhosanxuatngay"].ToString() : null
+                                Xuatkhosanxuatngay = row["Xuat kho cho SX ngay"] != DBNull.Value ? row["Xuat kho cho SX ngay"].ToString() : null
                             };
                             dbContex.xuatNLs.Add(xuatNL);
                         }
                         dbContex.SaveChanges();
                         MessageBox.Show("Import Data thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        XuatNLs = new ObservableCollection<XuatNL>(dbContex.xuatNLs.ToList());
+                        //XuatNLs = new ObservableCollection<XuatNL>(dbContex.xuatNLs.ToList());
                     }
                 }
             }
