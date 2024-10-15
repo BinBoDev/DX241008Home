@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\OneDrive\\OneDrive - Cong ty TNHH But chi Mitsubishi Viet nam\\Desktop\\Home\\DX\\DX\\DX.csproj": {}
+    "D:\\PhanmemQCC\\App\\DX241008Home\\DX241008Home\\DX\\DX\\DX.csproj": {}
   },
   "projects": {
-    "D:\\OneDrive\\OneDrive - Cong ty TNHH But chi Mitsubishi Viet nam\\Desktop\\Home\\DX\\DX\\DX.csproj": {
+    "D:\\PhanmemQCC\\App\\DX241008Home\\DX241008Home\\DX\\DX\\DX.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OneDrive\\OneDrive - Cong ty TNHH But chi Mitsubishi Viet nam\\Desktop\\Home\\DX\\DX\\DX.csproj",
+        "projectUniqueName": "D:\\PhanmemQCC\\App\\DX241008Home\\DX241008Home\\DX\\DX\\DX.csproj",
         "projectName": "DX",
-        "projectPath": "D:\\OneDrive\\OneDrive - Cong ty TNHH But chi Mitsubishi Viet nam\\Desktop\\Home\\DX\\DX\\DX.csproj",
-        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "D:\\OneDrive\\OneDrive - Cong ty TNHH But chi Mitsubishi Viet nam\\Desktop\\Home\\DX\\DX\\obj\\",
+        "projectPath": "D:\\PhanmemQCC\\App\\DX241008Home\\DX241008Home\\DX\\DX\\DX.csproj",
+        "packagesPath": "C:\\Users\\p.tan\\.nuget\\packages\\",
+        "outputPath": "D:\\PhanmemQCC\\App\\DX241008Home\\DX241008Home\\DX\\DX\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\p.tan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
