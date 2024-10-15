@@ -113,11 +113,23 @@
                                     <DataGridTemplateColumn Header="Select">
                                         <DataGridTemplateColumn.CellTemplate>
                                             <DataTemplate>
-                                                <CheckBox Name="ckSelectd" Background="Red" Command="{Binding DataContext.IsCheckCommand, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}" IsChecked="{Binding isSelectedRow}">
+                                                <!-- 
+                                                Command="{Binding DataContext.IsCheckCommand, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}"
+                                                -->
+                                                <CheckBox Name="ckSelectd" IsChecked="{Binding IsCheckCommand,RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}">
                                                     <StackPanel Orientation="Horizontal">
                                                         <materialDesign:PackIcon Kind="CursorDefaultClickOutline"  />
                                                         <TextBlock Text="Chọn"/>
                                                     </StackPanel>
+                                                    <CheckBox.Style>
+                                                        <Style TargetType="CheckBox">
+                                                            <Style.Triggers>
+                                                                <Trigger Property="IsChecked" Value="True">
+                                                                    <Setter Property="Background" Value="Green"/>
+                                                                </Trigger>
+                                                            </Style.Triggers>
+                                                        </Style>
+                                                    </CheckBox.Style>
                                                 </CheckBox>
                                             </DataTemplate>
                                         </DataGridTemplateColumn.CellTemplate>
@@ -139,7 +151,7 @@
                                 <TextBlock Text="Tìm File"/>
                             </StackPanel>
                         </Button>
-                        <Button Margin="2" Background="Indigo" Command="{Binding UpDateDataGrig}">
+                        <Button Margin="2" Background="Indigo" Command="{Binding UpDateDataGrig,Mode=TwoWay}">
                             <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                                 <materialDesign:PackIcon Kind="Import" />
                                 <TextBlock Text="Import"/>

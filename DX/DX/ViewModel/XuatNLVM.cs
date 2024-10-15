@@ -180,9 +180,11 @@ namespace DX.ViewModel
         public ICommand FillDataCammand {  get; set; }
         public ICommand ShowExcelCommand { get; set; }
         public ICommand IsCheckCommand { get; set; }
-        public ICommand CheckCommand { get; set; }
         public ICommand UpDateDataGrig {  get; set; }
         public ICommand UnCheckCommand { get; set; }    
+        public ICommand SelectedRow {  get; set; }
+        public ICommand UnSelectedRow { get; set; }
+
         public XuatNLVM()
         {
             dbContex = new DXSP();
@@ -190,22 +192,12 @@ namespace DX.ViewModel
             FillDataCammand = new RelayCommand(Filted);
             ShowExcelCommand = new RelayCommand(ShowExcel);
             IsCheckCommand = new RelayCommand(IsCheckRow, CanCheck);
-            //UnCheckCommand = new RelayCommand(UnCheckRow);
-            CheckCommand = new RelayCommand(Checkcmd);
             UpDateDataGrig = new RelayCommand(UpDateData);
             XuatNLs = new ObservableCollection<XuatNL>(dbContex.xuatNLs.ToList());
             ExcelShow = new ObservableCollection<XuatNL>();//Dòng này có ý nghĩa khởi tạo giá trị
             ExcelSelected = new ObservableCollection<XuatNL>();
         }
 
-        private void UnCheckRow(object? obj)
-        {   
-            if(SelectedXuatNL != null)
-            {
-                ExcelSelected.Remove(selectedXuatNL);
-            }    
-            
-        }
 
         private bool CanCheck(object? obj)
         {
@@ -221,10 +213,6 @@ namespace DX.ViewModel
             OnPropertyChanged(nameof(XuatNLs));
         }
 
-        private void Checkcmd(object? obj)
-        {
-            MessageBox.Show($"{ExcelSelected.Count}");
-        }
 
         private void IsCheckRow(object? obj)
         {
