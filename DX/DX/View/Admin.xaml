@@ -49,6 +49,12 @@
                             Header="POM"
                             Icon="{materialDesign:PackIcon Kind=FilePowerpointOutline}"
                             />
+                        <MenuItem
+                            Click="NextPageDataSainpen"
+                            Header="DataSainpen"
+                            Icon="{materialDesign:PackIcon Kind=DatabaseEditOutline}"
+                            />
+
                     </MenuItem>
                     <!--Menu Edit-->
                     <MenuItem

@@ -741,3 +741,7 @@ D:\PhanmemQCC\App\DX241008Home\DX241008Home\DX\DX\obj\Debug\net8.0-windows\refin
 D:\PhanmemQCC\App\DX241008Home\DX241008Home\DX\DX\obj\Debug\net8.0-windows\DX.pdb
 D:\PhanmemQCC\App\DX241008Home\DX241008Home\DX\DX\obj\Debug\net8.0-windows\DX.genruntimeconfig.cache
 D:\PhanmemQCC\App\DX241008Home\DX241008Home\DX\DX\obj\Debug\net8.0-windows\ref\DX.dll
+D:\PhanmemQCC\App\DX241008Home\DX241008Home\DX\DX\obj\Debug\net8.0-windows\View\DataSP.g.cs
+D:\PhanmemQCC\App\DX241008Home\DX241008Home\DX\DX\obj\Debug\net8.0-windows\View\DataSPWD.g.cs
+D:\PhanmemQCC\App\DX241008Home\DX241008Home\DX\DX\obj\Debug\net8.0-windows\View\DataSP.baml
+D:\PhanmemQCC\App\DX241008Home\DX241008Home\DX\DX\obj\Debug\net8.0-windows\View\DataSPWD.baml

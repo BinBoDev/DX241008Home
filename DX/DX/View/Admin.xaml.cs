@@ -61,6 +61,19 @@ namespace DX.View
         {
             this.Show();
         }
+
+        private void NextPageDataSainpen(object sender, RoutedEventArgs e)
+        {
+            DataSPWD dataSPWD = new DataSPWD();
+            dataSPWD.Closed += DataSPWD_Closed;
+            dataSPWD.Show();
+            this.Hide();
+        }
+
+        private void DataSPWD_Closed(object? sender, EventArgs e)
+        {
+            this.Show();
+        }
     }
     //public class BoolToIntConverter : IValueConverter
     //{

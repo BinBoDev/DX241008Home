@@ -3,45 +3,20 @@
   "WorkspaceRootPath": "D:\\PhanmemQCC\\App\\DX241008Home\\DX241008Home\\DX\\",
   "Documents": [
     {
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|d:\\phanmemqcc\\app\\dx241008home\\dx241008home\\dx\\dx\\viewmodel\\xuatnlvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|solutionrelative:dx\\viewmodel\\xuatnlvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|d:\\phanmemqcc\\app\\dx241008home\\dx241008home\\dx\\dx\\view\\dataspwd.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|solutionrelative:dx\\view\\dataspwd.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|d:\\phanmemqcc\\app\\dx241008home\\dx241008home\\dx\\dx\\models\\xuatnl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|solutionrelative:dx\\models\\xuatnl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|d:\\phanmemqcc\\app\\dx241008home\\dx241008home\\dx\\dx\\view\\admin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|solutionrelative:dx\\view\\admin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|d:\\phanmemqcc\\app\\dx241008home\\dx241008home\\dx\\dx\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|solutionrelative:dx\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|d:\\phanmemqcc\\app\\dx241008home\\dx241008home\\dx\\dx\\view\\admin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|solutionrelative:dx\\view\\admin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|d:\\phanmemqcc\\app\\dx241008home\\dx241008home\\dx\\dx\\models\\dxsp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|solutionrelative:dx\\models\\dxsp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|d:\\phanmemqcc\\app\\dx241008home\\dx241008home\\dx\\dx\\view\\xuatnlwd.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|solutionrelative:dx\\view\\xuatnlwd.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|d:\\phanmemqcc\\app\\dx241008home\\dx241008home\\dx\\dx\\viewmodel\\accountvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|solutionrelative:dx\\viewmodel\\accountvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
-      "AbsoluteMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|d:\\onedrive\\onedrive - cong ty tnhh but chi mitsubishi viet nam\\desktop\\home\\dx\\dx\\viewmodel\\accountvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|solutionrelative:dx\\viewmodel\\accountvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|d:\\onedrive\\onedrive - cong ty tnhh but chi mitsubishi viet nam\\desktop\\home\\dx\\dx\\viewmodel\\xuatnlvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|solutionrelative:dx\\viewmodel\\xuatnlvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|d:\\onedrive\\onedrive - cong ty tnhh but chi mitsubishi viet nam\\desktop\\home\\dx\\dx\\view\\xuatnlwd.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|solutionrelative:dx\\view\\xuatnlwd.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
->>>>>>> 28bdc9d68ccdcd74456c5483596ad330c1a30b52
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|d:\\phanmemqcc\\app\\dx241008home\\dx241008home\\dx\\dx\\view\\accountmanager.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|solutionrelative:dx\\view\\accountmanager.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|d:\\phanmemqcc\\app\\dx241008home\\dx241008home\\dx\\dx\\models\\datasp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70731619-2274-423E-B1D3-CE8B07B16276}|DX\\DX.csproj|solutionrelative:dx\\models\\datasp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -51,132 +26,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-<<<<<<< HEAD
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "XuatNL.cs",
-              "DocumentMoniker": "D:\\PhanmemQCC\\App\\DX241008Home\\DX241008Home\\DX\\DX\\Models\\XuatNL.cs",
-              "RelativeDocumentMoniker": "DX\\Models\\XuatNL.cs",
-              "ToolTip": "D:\\PhanmemQCC\\App\\DX241008Home\\DX241008Home\\DX\\DX\\Models\\XuatNL.cs",
-              "RelativeToolTip": "DX\\Models\\XuatNL.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAswB0AAAApAAAAAAAAAA==",
+              "Title": "Admin.xaml.cs",
+              "DocumentMoniker": "D:\\PhanmemQCC\\App\\DX241008Home\\DX241008Home\\DX\\DX\\View\\Admin.xaml.cs",
+              "RelativeDocumentMoniker": "DX\\View\\Admin.xaml.cs",
+              "ToolTip": "D:\\PhanmemQCC\\App\\DX241008Home\\DX241008Home\\DX\\DX\\View\\Admin.xaml.cs",
+              "RelativeToolTip": "DX\\View\\Admin.xaml.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAwEAAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T01:15:11.403Z"
+              "WhenOpened": "2024-10-16T09:35:59.885Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "D:\\PhanmemQCC\\App\\DX241008Home\\DX241008Home\\DX\\DX\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "DX\\MainWindow.xaml.cs",
-              "ToolTip": "D:\\PhanmemQCC\\App\\DX241008Home\\DX241008Home\\DX\\DX\\MainWindow.xaml.cs",
-              "RelativeToolTip": "DX\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAiwDoAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T01:12:19.565Z"
-=======
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AccountVM.cs",
-              "DocumentMoniker": "D:\\OneDrive\\OneDrive - Cong ty TNHH But chi Mitsubishi Viet nam\\Desktop\\Home\\DX\\DX\\ViewModel\\AccountVM.cs",
-              "RelativeDocumentMoniker": "DX\\ViewModel\\AccountVM.cs",
-              "ToolTip": "D:\\OneDrive\\OneDrive - Cong ty TNHH But chi Mitsubishi Viet nam\\Desktop\\Home\\DX\\DX\\ViewModel\\AccountVM.cs",
-              "RelativeToolTip": "DX\\ViewModel\\AccountVM.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAAEIAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T18:00:34.578Z",
+              "Title": "Admin.xaml",
+              "DocumentMoniker": "D:\\PhanmemQCC\\App\\DX241008Home\\DX241008Home\\DX\\DX\\View\\Admin.xaml",
+              "RelativeDocumentMoniker": "DX\\View\\Admin.xaml",
+              "ToolTip": "D:\\PhanmemQCC\\App\\DX241008Home\\DX241008Home\\DX\\DX\\View\\Admin.xaml",
+              "RelativeToolTip": "DX\\View\\Admin.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-16T09:34:07.526Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "AccountManager.xaml",
-              "DocumentMoniker": "D:\\OneDrive\\OneDrive - Cong ty TNHH But chi Mitsubishi Viet nam\\Desktop\\Home\\DX\\DX\\View\\AccountManager.xaml",
-              "RelativeDocumentMoniker": "DX\\View\\AccountManager.xaml",
-              "ToolTip": "D:\\OneDrive\\OneDrive - Cong ty TNHH But chi Mitsubishi Viet nam\\Desktop\\Home\\DX\\DX\\View\\AccountManager.xaml",
-              "RelativeToolTip": "DX\\View\\AccountManager.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-15T17:59:05.671Z",
+              "Title": "DataSP.cs",
+              "DocumentMoniker": "D:\\PhanmemQCC\\App\\DX241008Home\\DX241008Home\\DX\\DX\\Models\\DataSP.cs",
+              "RelativeDocumentMoniker": "DX\\Models\\DataSP.cs",
+              "ToolTip": "D:\\PhanmemQCC\\App\\DX241008Home\\DX241008Home\\DX\\DX\\Models\\DataSP.cs",
+              "RelativeToolTip": "DX\\Models\\DataSP.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T09:24:52.126Z",
               "EditorCaption": ""
->>>>>>> 28bdc9d68ccdcd74456c5483596ad330c1a30b52
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DXSP.cs",
-              "DocumentMoniker": "D:\\PhanmemQCC\\App\\DX241008Home\\DX241008Home\\DX\\DX\\Models\\DXSP.cs",
-              "RelativeDocumentMoniker": "DX\\Models\\DXSP.cs",
-              "ToolTip": "D:\\PhanmemQCC\\App\\DX241008Home\\DX241008Home\\DX\\DX\\Models\\DXSP.cs",
-              "RelativeToolTip": "DX\\Models\\DXSP.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAiwCQAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T01:07:33.841Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AccountManager.xaml",
-              "DocumentMoniker": "D:\\PhanmemQCC\\App\\DX241008Home\\DX241008Home\\DX\\DX\\View\\AccountManager.xaml",
-              "RelativeDocumentMoniker": "DX\\View\\AccountManager.xaml",
-              "ToolTip": "D:\\PhanmemQCC\\App\\DX241008Home\\DX241008Home\\DX\\DX\\View\\AccountManager.xaml",
-              "RelativeToolTip": "DX\\View\\AccountManager.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-13T14:10:29.809Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AccountVM.cs",
-              "DocumentMoniker": "D:\\PhanmemQCC\\App\\DX241008Home\\DX241008Home\\DX\\DX\\ViewModel\\AccountVM.cs",
-              "RelativeDocumentMoniker": "DX\\ViewModel\\AccountVM.cs",
-              "ToolTip": "D:\\PhanmemQCC\\App\\DX241008Home\\DX241008Home\\DX\\DX\\ViewModel\\AccountVM.cs",
-              "RelativeToolTip": "DX\\ViewModel\\AccountVM.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAAAGgAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T14:09:53.022Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "XuatNLVM.cs",
-              "DocumentMoniker": "D:\\PhanmemQCC\\App\\DX241008Home\\DX241008Home\\DX\\DX\\ViewModel\\XuatNLVM.cs",
-              "RelativeDocumentMoniker": "DX\\ViewModel\\XuatNLVM.cs",
-              "ToolTip": "D:\\PhanmemQCC\\App\\DX241008Home\\DX241008Home\\DX\\DX\\ViewModel\\XuatNLVM.cs",
-              "RelativeToolTip": "DX\\ViewModel\\XuatNLVM.cs",
-<<<<<<< HEAD
-              "ViewState": "AgIAAPoAAAAAAAAAAAAcwAMBAAAcAAAAAAAAAA==",
-=======
-              "ViewState": "AgIAALYAAAAAAAAAAAAAAMEAAABCAAAAAAAAAA==",
->>>>>>> 28bdc9d68ccdcd74456c5483596ad330c1a30b52
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T17:49:22.448Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 4,
-=======
-              "DocumentIndex": 2,
->>>>>>> 28bdc9d68ccdcd74456c5483596ad330c1a30b52
-              "Title": "XuatNLWD.xaml",
-              "DocumentMoniker": "D:\\PhanmemQCC\\App\\DX241008Home\\DX241008Home\\DX\\DX\\View\\XuatNLWD.xaml",
-              "RelativeDocumentMoniker": "DX\\View\\XuatNLWD.xaml",
-              "ToolTip": "D:\\PhanmemQCC\\App\\DX241008Home\\DX241008Home\\DX\\DX\\View\\XuatNLWD.xaml",
-              "RelativeToolTip": "DX\\View\\XuatNLWD.xaml",
+              "Title": "DataSPWD.xaml",
+              "DocumentMoniker": "D:\\PhanmemQCC\\App\\DX241008Home\\DX241008Home\\DX\\DX\\View\\DataSPWD.xaml",
+              "RelativeDocumentMoniker": "DX\\View\\DataSPWD.xaml",
+              "ToolTip": "D:\\PhanmemQCC\\App\\DX241008Home\\DX241008Home\\DX\\DX\\View\\DataSPWD.xaml",
+              "RelativeToolTip": "DX\\View\\DataSPWD.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-<<<<<<< HEAD
-              "WhenOpened": "2024-10-12T08:23:46.922Z"
-=======
-              "WhenOpened": "2024-10-15T17:45:27.48Z",
+              "WhenOpened": "2024-10-16T09:05:38.937Z",
               "EditorCaption": ""
->>>>>>> 28bdc9d68ccdcd74456c5483596ad330c1a30b52
             }
           ]
         }

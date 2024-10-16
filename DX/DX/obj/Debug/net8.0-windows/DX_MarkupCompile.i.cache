@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\PhanmemQCC\App\DX241008Home\DX241008Home\DX\DX\App.xaml
-4-42455628
+6794070569
 
-161012521908
+181642467705
 253-625943049
-MainWindow.xaml;View\AccountManager.xaml;View\Admin.xaml;View\XuatNLWD.xaml;
+MainWindow.xaml;View\AccountManager.xaml;View\Admin.xaml;View\DataSP.xaml;View\DataSPWD.xaml;View\XuatNLWD.xaml;
 
-False
+True
 

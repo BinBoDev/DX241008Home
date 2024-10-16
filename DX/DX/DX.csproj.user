@@ -13,6 +13,9 @@
     <Compile Update="View\Admin.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\DataSPWD.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\XuatNLWD.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -22,6 +25,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\AccountManager.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\DataSPWD.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\XuatNLWD.xaml">

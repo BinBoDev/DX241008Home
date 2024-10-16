@@ -1,0 +1,62 @@
+﻿<Window x:Class="DX.View.DataSPWD"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:DX.View"
+        mc:Ignorable="d"
+        Icon="/DX;component/View/Image/Uni.ico"
+        Title="Dữ liệu Sainpen" Height="450" Width="800">
+    <Grid>
+        <Border>
+            <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                <materialDesign:Card Margin="2">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="40"/>
+                        </Grid.RowDefinitions>
+                        <!-- Header Control-->
+                        <!-- Nội dung hiển thị-->
+                        <DataGrid Grid.Row="1">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Id"/>
+                                <DataGridTextColumn Header="Mã KH"/>
+                                <DataGridTextColumn Header="Mã lô LR"/>
+                                <DataGridTextColumn Header="Code(MPV)"/>
+                                <DataGridTextColumn Header="Code JK"/>
+                                <DataGridTextColumn Header="Code"/>
+                                <DataGridTextColumn Header="Chungloaichinh"/>
+                                <DataGridTextColumn Header="Tên SP"/>
+                                <DataGridTextColumn Header="Màu"/>
+                                <DataGridTextColumn Header="Dây chuyền"/>
+                                <DataGridTextColumn Header="Tên dây chuyền"/>
+                                <DataGridTextColumn Header="Nhóm LR"/>
+                                <DataGridTextColumn Header="Tháng KH"/>
+                                <DataGridTextColumn Header="Năm KH"/>
+                                <DataGridTextColumn Header="KH Lần"/>
+                                <DataGridTextColumn Header="Số theo KH"/>
+                                <DataGridTextColumn Header="Ngày LR"/>
+                                <DataGridTextColumn Header="Số lô"/>
+                                <DataGridTextColumn Header="SLLR chỉ thị"/>
+                                <DataGridTextColumn Header="Số lượng thu được"/>
+                                <DataGridTextColumn Header="Số lượng hủy"/>
+                                <DataGridTextColumn Header="Số lượng sửa"/>
+                                <DataGridTextColumn Header="Phế phẩm trên máy"/>
+                                <DataGridTextColumn Header="Số lượng mẫu QC"/>
+                                <DataGridTextColumn Header="Thời gian bắt đầu"/>
+                                <DataGridTextColumn Header="Thời gian kết thúc"/>
+                                <DataGridTextColumn Header="Thời gian dừng KH"/>
+                                
+                                
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <!-- Footer Control-->
+                    </Grid>
+                </materialDesign:Card>
+            </ScrollViewer>
+        </Border>
+    </Grid>
+</Window>
