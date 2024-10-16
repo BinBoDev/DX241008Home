@@ -180,9 +180,9 @@ namespace DX.ViewModel
         public ICommand FillDataCammand {  get; set; }
         public ICommand ShowExcelCommand { get; set; }
         public ICommand IsCheckCommand { get; set; }
-        public ICommand CheckCommand { get; set; }
         public ICommand UpDateDataGrig {  get; set; }
-        public ICommand UnCheckCommand { get; set; }    
+        public ICommand UnCheckCommand { get; set; }
+        public ICommand DelItem { get; set; }
         public XuatNLVM()
         {
             dbContex = new DXSP();
@@ -190,12 +190,26 @@ namespace DX.ViewModel
             FillDataCammand = new RelayCommand(Filted);
             ShowExcelCommand = new RelayCommand(ShowExcel);
             IsCheckCommand = new RelayCommand(IsCheckRow, CanCheck);
-            //UnCheckCommand = new RelayCommand(UnCheckRow);
-            CheckCommand = new RelayCommand(Checkcmd);
-            UpDateDataGrig = new RelayCommand(UpDateData);
+            UpDateDataGrig = new RelayCommand(UpDateData,CanUpdateData);
+            DelItem = new RelayCommand(DelSelecedtItem, CanDelItem);
             XuatNLs = new ObservableCollection<XuatNL>(dbContex.xuatNLs.ToList());
             ExcelShow = new ObservableCollection<XuatNL>();//Dòng này có ý nghĩa khởi tạo giá trị
             ExcelSelected = new ObservableCollection<XuatNL>();
+        }
+
+        private bool CanDelItem(object? obj)
+        {
+            return IsSelectedRow != null;  
+        }
+
+        private void DelSelecedtItem(object? obj)
+        {
+           
+        }
+
+        private bool CanUpdateData(object? obj)
+        {
+            return ExcelSelected.Count > 0;
         }
 
         private void UnCheckRow(object? obj)
@@ -229,7 +243,7 @@ namespace DX.ViewModel
         private void IsCheckRow(object? obj)
         {
             ExcelSelected.Add(selectedXuatNL);
-            SelectedXuatNL = null;
+            //SelectedXuatNL = null;
         }
 
         private void ShowExcel(object? obj)
@@ -259,13 +273,13 @@ namespace DX.ViewModel
 
                             var excelFile = new XuatNL()
                             {
-                                CodeNL = row["CodeNL"] != DBNull.Value ? Convert.ToInt32(row["CodeNL"]) : 0,
-                                TenNL = row["TenNL"].ToString(),
-                                Soluongxuat = row["Soluongxuat"] != DBNull.Value ? Convert.ToInt32(row["Soluongxuat"]) : 0,
-                                Ngaygioxuatthucte = Convert.ToDateTime(row["Ngaygioxuatthucte"]),
-                                KehoachThangNam = row["KehoachThangNam"].ToString(),
+                                CodeNL = row["Code NL"] != DBNull.Value ? Convert.ToInt32(row["Code NL"]) : 0,
+                                TenNL = row["Ten NL"].ToString(),
+                                Soluongxuat = row["So luong xuat"] != DBNull.Value ? Convert.ToInt32(row["So luong xuat"]) : 0,
+                                Ngaygioxuatthucte = Convert.ToDateTime(row["Ngay gio xuat thuc te"]),
+                                KehoachThangNam = row["KH thang nam"].ToString(),
                                 Index = row["Index"].ToString(),
-                                Xuatkhosanxuatngay = row["Xuatkhosanxuatngay"]?.ToString()
+                                Xuatkhosanxuatngay = row["Xuat kho cho SX ngay"]?.ToString()
                             };
 
                             ExcelShow.Add(excelFile);
@@ -357,19 +371,19 @@ namespace DX.ViewModel
                         {
                             var xuatNL = new XuatNL()
                             {
-                                CodeNL = row["CodeNL"] != DBNull.Value ? Convert.ToInt32(row["CodeNL"]) : throw new Exception("CodeNL không được trống"),
-                                TenNL = row["TenNL"].ToString(),
-                                Soluongxuat = row["Soluongxuat"] != DBNull.Value ? Convert.ToInt32(row["Soluongxuat"]) : 0,
-                                Ngaygioxuatthucte = Convert.ToDateTime(row["Ngaygioxuatthucte"]),
-                                KehoachThangNam = row["KehoachThangNam"].ToString(),
+                                CodeNL = row["Code NL"] != DBNull.Value ? Convert.ToInt32(row["Code NL"]) : throw new Exception("CodeNL không được trống"),
+                                TenNL = row["Ten NL"].ToString(),
+                                Soluongxuat = row["So luong xuat"] != DBNull.Value ? Convert.ToInt32(row["So luong xuat"]) : 0,
+                                Ngaygioxuatthucte = Convert.ToDateTime(row["Ngay gio xuat thuc te"]),
+                                KehoachThangNam = row["KH thang nam"].ToString(),
                                 Index = row["Index"].ToString(),
-                                Xuatkhosanxuatngay = row["Xuatkhosanxuatngay"] != DBNull.Value ? row["Xuatkhosanxuatngay"].ToString() : null
+                                Xuatkhosanxuatngay = row["Xuat kho cho SX ngay"] != DBNull.Value ? row["Xuat kho cho SX ngay"].ToString() : null
                             };
                             dbContex.xuatNLs.Add(xuatNL);
                         }
                         dbContex.SaveChanges();
                         MessageBox.Show("Import Data thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        XuatNLs = new ObservableCollection<XuatNL>(dbContex.xuatNLs.ToList());
+                        //XuatNLs = new ObservableCollection<XuatNL>(dbContex.xuatNLs.ToList());
                     }
                 }
             }

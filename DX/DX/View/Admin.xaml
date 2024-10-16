@@ -25,7 +25,7 @@
                 <Menu IsMainMenu="True">
                     <!--Menu Admin-->
                     <MenuItem
-                        Header="Admin" Icon="{materialDesign:PackIcon Kind= AccountCogOutline}" VerticalAlignment="Center" HorizontalAlignment="Left"  >
+                        Header="Admin" VerticalAlignment="Center" HorizontalAlignment="Left"  >
                         <MenuItem
                             Click="MenuItem_Click"
                             Header="Tài khoản"
@@ -35,20 +35,19 @@
                             Icon="{materialDesign:PackIcon Kind=AlphaPCircleOutline}"/>
                         <MenuItem
                             Header="Dây chuyền"
-                            Icon="{materialDesign:PackIcon Kind=ExitToApp}"/>
+                            Icon="{materialDesign:PackIcon Kind=AccountGroupOutline}"/>
                         <MenuItem
                             Header="Nguyên liệu"
-                            Icon="{materialDesign:PackIcon Kind=ExitToApp}"
+                            Icon="{materialDesign:PackIcon Kind=PencilBoxMultipleOutline}"
                             />
                         <MenuItem
-                            Name="XuatNL"
                             Click="XuatNL_Click"
                             Header="Nguyên liệu xuất"
-                            Icon="{materialDesign:PackIcon Kind=ExitToApp}"
+                            Icon="{materialDesign:PackIcon Kind=HomeExportOutline}"
                             />
                         <MenuItem
                             Header="POM"
-                            Icon="{materialDesign:PackIcon Kind=ExitToApp}"
+                            Icon="{materialDesign:PackIcon Kind=FilePowerpointOutline}"
                             />
                     </MenuItem>
                     <!--Menu Edit-->
@@ -56,13 +55,13 @@
                         Header="Sản xuất">
                         <MenuItem
                             Header="Kế hoạch sản xuất"
-                            Icon="{materialDesign:PackIcon Kind=ContentCut}" />
+                            Icon="{materialDesign:PackIcon Kind=CalendarMonthOutline}" />
                         <MenuItem
                             Header="Chỉ thị sản xuất"
-                            Icon="{materialDesign:PackIcon Kind=ContentCopy}" />
+                            Icon="{materialDesign:PackIcon Kind=FileClockOutline}" />
                         <MenuItem
                             Header="Xuất hàng"
-                            Icon="{materialDesign:PackIcon Kind=ContentPaste}" />
+                            Icon="{materialDesign:PackIcon Kind=HomeExportOutline}" />
                     </MenuItem>
                 </Menu>
             </StackPanel>
